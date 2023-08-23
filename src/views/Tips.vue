@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content-container">
         <PageTitle :title="title" />
         <ContentBox>
             <div flex flex-col gap-y-2 text-zinc-50>
@@ -9,6 +9,7 @@
                 </div>
             </div>
         </ContentBox>
+        <BackToIndex />
     </div>
 </template>
 
@@ -16,6 +17,7 @@
 import { useRoute } from 'vue-router'
 import PageTitle from '@/components/PageTitle.vue'
 import ContentBox from '@/components/ContentBox.vue'
+import BackToIndex from '@/components/BackToIndex.vue'
 
 const route = useRoute()
 const title = route.query.title

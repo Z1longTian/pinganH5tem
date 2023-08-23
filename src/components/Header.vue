@@ -1,5 +1,5 @@
 <template>
-    <div flex justify-between text-zinc-200>
+    <div flex justify-between text-zinc-50>
         <Logo />
         <div>
             专业让生活更简单
