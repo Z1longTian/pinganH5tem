@@ -1,20 +1,27 @@
 <template>
-    <!-- menu -->
-    <div grid grid-cols-4 text-zinc-100 text-xs gap-6>
-        <div v-for="item in menu" 
-        @click="item.name && to(item.name, item.label)"
-        flex flex-col justify-center items-center gap-y-1
-        p-1 rounded-lg shadow-lg cursor-pointer 
-        hover:scale-110
-        class="bg-white/20">
-            <!-- icon -->
-            <div text-white :class="item.icon"
-            text-5xl
-            ></div>
-            <!-- label -->
-            <p>{{ item.label }}</p>
+    <div relative>
+        <div absolute inset-0>
+            <img src="@/assets/img/mainbg.jpg" alt="mainbg">
+        </div>
+        <!-- menu -->
+        <div relative grid grid-cols-4 text-zinc-100 text-xs gap-6 
+        class="top-[30vh] px-4">
+            <div v-for="item in menu" 
+            @click="item.name && to(item.name, item.label)"
+            flex flex-col justify-center items-center gap-y-1
+            p-1 rounded-lg shadow-lg cursor-pointer 
+            hover:scale-110
+            class="bg-white/20">
+                <!-- icon -->
+                <div text-white :class="item.icon"
+                text-5xl
+                ></div>
+                <!-- label -->
+                <p>{{ item.label }}</p>
+            </div>
         </div>
     </div>
+    
 </template>
 
 <script setup>
@@ -36,7 +43,8 @@ const menu = [
     {
         index: 2,
         label: '盛典流程',
-        icon: 'i-solar-calendar-bold'
+        icon: 'i-solar-calendar-bold',
+        name: 'Schedule'
     },
     {
         index: 3,
@@ -46,7 +54,8 @@ const menu = [
     {
         index: 4,
         label: '周边景点',
-        icon: 'i-solar-ferris-wheel-outline'
+        icon: 'i-solar-ferris-wheel-outline',
+        name: 'Landmark'
     },
     {
         index: 5,

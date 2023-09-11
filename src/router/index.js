@@ -15,7 +15,17 @@ const routes = [
         path: '/contact',
         name: 'Contact',
         component: () => import('@/views/Contact.vue')
-    }
+    },
+    {
+        path: '/landmark',
+        name: 'Landmark',
+        component: () => import('@/views/Landmarks.vue')
+    },
+    {
+        path: '/schedule',
+        name: 'Schedule',
+        component: () => import('@/views/Schedule.vue')
+    },
 
 ]
 
