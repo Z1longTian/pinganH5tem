@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+https://adorable-tanuki-316745.netlify.app/
